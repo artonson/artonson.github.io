@@ -1,7 +1,7 @@
 ---
 title: Monocular 3D Object Detection via Geometric Reasoning on Keypoints
 date: '2020-01-01'
-draft: true
+draft: false
 publishDate: '2021-09-05T20:35:11.921031Z'
 authors:
 - Ivan Barabanau

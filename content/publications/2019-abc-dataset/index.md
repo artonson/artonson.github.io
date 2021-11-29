@@ -1,7 +1,7 @@
 ---
 title: 'ABC: A Big CAD Model Dataset for Geometric Deep Learning'
 date: '2019-01-01'
-draft: true
+draft: false
 publishDate: '2021-08-04T13:25:02.626580Z'
 authors:
 - Sebastian Koch

@@ -1,7 +1,7 @@
 ---
 title: Perceptual Deep Depth Super-Resolution
 date: '2019-01-01'
-draft: true
+draft: false
 publishDate: '2021-08-04T14:09:14.877295Z'
 authors:
 - Oleg Voynov
