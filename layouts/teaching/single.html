@@ -1,0 +1,102 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+    <h1>{{ .Params.title | markdownify }}</h1>
+</div>
+
+<div class="single-authors-wrap">
+    <table class="single-authors" id="single-authors">
+        <tr>
+        {{ range $index, $element := .Params.authors }}
+            <td>{{ $element }}</td>
+            {{ if eq (mod (add $index 1) 5) 0 }}
+            </tr>
+            <tr>
+            {{ end }}
+        {{ end }}
+        </tr>
+    </table>
+</div>
+
+
+<div class="publication-single-teaser">
+    <img src="{{ .RelPermalink }}image-big.png" width=768/>
+</div>
+
+
+<div>
+    <h2>Information</h2>
+    <div class="teaching-single-venue">
+        <span><em>Version (taught during): </em>{{ .Params.course_version }} ({{ .Params.course_date }})</span>
+    </div>
+
+    <div class="teaching-single-venue">
+        <span><em>Venue: </em>{{ .Params.venue }}</span>
+    </div>
+
+    <div class="teaching-single-venue">
+        <span><em>Program: </em>{{ .Params.level }} in {{ .Params.program }}</span>
+    </div>
+</div>
+
+
+
+<div>
+    <h2>Abstract</h2>
+    <span class="publications-single-abstract">
+        {{ .Params.abstract | markdownify }}
+    </span>
+</div>
+
+<main>
+{{ .Content }}
+</main>
+
+
+<div>
+    <h2>Course Links</h2>
+    <ul>
+        {{ if (isset .Params "url_notes") }}
+        <li>
+            Course materials (lecture notes and slides): <a href="{{ .Params.url_notes }}">{{ .Params.url_notes }}</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_code") }}
+        <li>
+            Source code: <a href="{{ .Params.url_code }}">{{ .Params.url_code }}</a>
+        </li>
+        {{ end }}
+        {{ if (isset .Params "url_data") }}
+        <li>
+            Dataset: <a href="{{ .Params.url_data }}">Dataset</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_video") }}
+        <li>
+            Course video recordings: <a href="{{ .Params.url_video }}">{{ .Params.url_video }}</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_syllabus") }}
+        <li>
+            Official syllabus: <a href="{{ .Params.url_syllabus }}">{{ .Params.url_syllabus }}</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_lms") }}
+        <li>
+            Official course LMS: <a href="{{ .Params.url_lms }}">{{ .Params.url_lms }}</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_course") }}
+        <li>
+            Course page: <a href="{{ .Params.url_course }}">{{ .Params.url_course }}</a>
+        </li>
+        {{ end }}
+
+    </ul>
+</div>
+
+{{ partial "footer.html" . }}

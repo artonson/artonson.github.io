@@ -1,0 +1,77 @@
+baseurl = "https://artonson.github.io/"
+languageCode = "en-us"
+title = "Alexey Artemov"
+theme = "hugo-xmin"
+paginate = 2
+Copyright = "© Yuanyuan GE 2020"
+canonifyurls = true
+
+[params]
+description = "Enter your personal description"
+authorlocation = "authorlocation"
+cover = "images/cover.png"
+## save the image you want to use as background picture in directory "./static/images"author = "author name"(delete this line when editing)
+logo = "images/logo.png"
+## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
+githubName = "your github name"
+linkedinName = "your linkedin name"
+email = "your email"
+instagramName = "your ins name"
+hideHUGOSupport = false
+footer =  "&copy; [Alexey Artemov](https://artonson.github.io) 2021 | [Email](mailto:a.artemov@skoltech.ru) | [Github](https://github.com/artonson) | [Scholar](https://scholar.google.ru/citations?user=5lVsH-IAAAAJ&hl=en) | [YouTube](https://www.youtube.com/channel/UCO946RPg2Yp2PXFzon9_73g) | [LinkedIn](https://www.linkedin.com/artonson) | [Twitter](https://twitter.com/artonson)"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]  # here are the buttons on the menu
+name = "Home" # Button will display as "Home"
+weight = 1 # the weight decides the position of the button (higher or lower)
+identifier = "home"
+pre = "<br />"
+url = "/"
+
+[[menu.main]]
+name = "Publications"
+weight = 2
+identifier = "publications"
+pre = "<br />"
+url = "/publications"
+
+[[menu.main]]
+name = "Teaching"
+identifier = "teaching" # this page will refer to a markdown file named "blog" in the content folder
+pre = "<br />"
+url = "/teaching"
+weight = 3
+
+[[menu.main]]
+name = "Students"
+identifier = "students"
+pre = "<br />"
+url = "/students"
+weight = 4
+
+[[menu.main]]
+name = "Code & Resources"
+identifier = "code_resources"
+pre = "<br />"
+url = "/code_resources"
+weight = 5
+
+[[menu.main]]
+name = "Press"
+identifier = "press"
+pre = "<br />"
+url = "/press"
+weight = 6
+
+
+[permalinks]
+post = "/:slug/"
+
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching on the website title shown on the tab</title>
+    <link>https://artonson.github.io/teaching/</link>
+    <description>Recent content in Teaching on the website title shown on the tab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Yuanyuan GE 2020</copyright>
+    <lastBuildDate>Tue, 03 Aug 2021 09:21:25 +0300</lastBuildDate><atom:link href="https://artonson.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Foundations of Software Engineering</title>
+      <link>https://artonson.github.io/teaching/fse_v2020.1/</link>
+      <pubDate>Sun, 08 Aug 2021 16:27:36 +0300</pubDate>
+      
+      <guid>https://artonson.github.io/teaching/fse_v2020.1/</guid>
+      <description>Course Contents Topics include:
+ Unix fundamentals: shell and command line, scripting, filesystem, streams and pipes, parameter parsing, remote machine, and ssh, etc., Software engineering in teams: code review and version control, reproducibility and containers, testing and test-driven development, improving code style, software deployment, and APIs, etc., Software design: team organization, software specifications, software project management, software design methodologies, object-oriented software design, etc.  As a project, the students will be required to work in teams to design, engineer, test, and deploy a real large software system using the principles described in this course.</description>
+    </item>
+    
+  </channel>
+</rss>
