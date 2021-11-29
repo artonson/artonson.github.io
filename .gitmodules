@@ -1,3 +1,4 @@
+
 [submodule "themes/hugo-xmin-art"]
 	path = themes/hugo-xmin-art
 	url = https://github.com/artonson/hugo-xmin-art
