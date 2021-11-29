@@ -1,3 +1,3 @@
-[submodule "themes/hugo-xmin"]
-	path = themes/hugo-xmin
-	url = https://github.com/yihui/hugo-xmin
+[submodule "themes/hugo-xmin-art"]
+	path = themes/hugo-xmin-art
+	url = https://github.com/artonson/hugo-xmin-art

@@ -1,7 +1,7 @@
 baseurl = "https://artonson.github.io/"
 languageCode = "en-us"
 title = "Alexey Artemov"
-theme = "hugo-xmin"
+theme = "hugo-xmin-art"
 paginate = 2
 Copyright = "© Yuanyuan GE 2020"
 canonifyurls = true
