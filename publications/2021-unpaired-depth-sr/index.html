@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Monocular 3D Object Detection via Geometric Reasoning on Keypoints | Alexey Artemov</title>
+<title>Towards Unpaired Depth Enhancement and Super-Resolution in the Wild | Alexey Artemov</title>
 <link rel=stylesheet href=https://artonson.github.io/css/style.css>
 <link rel=stylesheet href=https://artonson.github.io/css/fonts.css>
 </head>
@@ -37,29 +37,35 @@
 <hr>
 </nav>
 <div class=article-meta>
-<h1>Monocular 3D Object Detection via Geometric Reasoning on Keypoints</h1>
+<h1>Towards Unpaired Depth Enhancement and Super-Resolution in the Wild</h1>
 </div>
 <div class=single-authors-wrap>
 <table class=single-authors id=single-authors>
 <tr>
-<td>Ivan Barabanau</td>
+<td>Aleksandr Safin</td>
+<td>Maxim Kan</td>
+<td>Nikita Drobyshev</td>
+<td>Oleg Voynov</td>
 <td>Alexey Artemov</td>
+</tr>
+<tr>
+<td>Alexander Filippov</td>
+<td>Denis Zorin</td>
 <td>Evgeny Burnaev</td>
-<td>Vyacheslav Murashkin</td>
 </tr>
 </table>
 </div>
 <div class=publication-single-teaser>
-<img src=https://artonson.github.io/publications/2019-monocular-3d/image-big.jpg width=768/>
+<img src=https://artonson.github.io/publications/2021-unpaired-depth-sr/image-big.jpg width=768/>
 </div>
 <div class=publication-single-venue>
-VISAPP
-2020
+arXiv
+2021
 </div>
 <div>
 <h2>Abstract</h2>
 <span class=publications-single-abstract>
-Monocular 3D object detection is well-known to be a challenging vision task due to the loss of depth information; attempts to recover depth using separate image-only approaches lead to unstable and noisy depth estimates, harming 3D detections. In this paper, we propose a novel keypoint-based approach for 3D object detection and localization from a single RGB image. We build our multi-branch model around 2D keypoint detection in images and complement it with a conceptually simple geometric reasoning method. Our network performs in an end-to-end manner, simultaneously and interdependently estimating 2D characteristics, such as 2D bounding boxes, keypoints, and orientation, along with full 3D pose in the scene. We fuse the outputs of distinct branches, applying a reprojection consistency loss during training. The experimental evaluation on the challenging KITTI dataset benchmark demonstrates that our network achieves state-of-the-art results among other monocular 3D detectors.
+Depth maps captured with commodity sensors are often of low quality and resolution; these maps need to be enhanced to be used in many applications. State-of-the-art data-driven methods of depth map super-resolution rely on registered pairs of low- and high-resolution depth maps of the same scenes. Acquisition of real-world paired data requires specialized setups. Another alternative, generating low-resolution maps from high-resolution maps by subsampling, adding noise and other artificial degradation methods, does not fully capture the characteristics of real-world low-resolution images. As a consequence, supervised learning methods trained on such artificial paired data may not perform well on real-world low-resolution inputs. We consider an approach to depth super-resolution based on learning from \emph{unpaired data}. While many techniques for unpaired image-to-image translation have been proposed, most fail to deliver effective hole-filling or reconstruct accurate surfaces using depth maps. We propose an unpaired learning method for depth super-resolution, which is based on a learnable degradation model, enhancement component and surface normal estimates as features to produce more accurate depth maps. We propose a benchmark for unpaired depth SR and demonstrate that our method outperforms existing unpaired methods and performs on par with paired.
 </span>
 </div>
 <main>
@@ -68,35 +74,19 @@ Monocular 3D object detection is well-known to be a challenging vision task due 
 <h2>Resources</h2>
 <ul>
 <li>
-Fulltext PDF: <a href=https://arxiv.org/pdf/1905.05618>Monocular 3D Object Detection via Geometric Reasoning on Keypoints</a>
+Fulltext PDF: <a href=https://arxiv.org/pdf/2105.12038>Towards Unpaired Depth Enhancement and Super-Resolution in the Wild</a>
 </li>
 <li>
 Citing:
-<pre tabindex=0><code>@inproceedings{2019-monocular-3d,
-  author    = {Ivan Barabanau and
-               Alexey Artemov and
-               Evgeny Burnaev and
-               Vyacheslav Murashkin},
-  editor    = {Giovanni Maria Farinella and
-               Petia Radeva and
-               Jos{\'{e}} Braz},
-  title     = {Monocular 3D Object Detection via Geometric Reasoning on Keypoints},
-  booktitle = {Proceedings of the 15th International Joint Conference on Computer
-               Vision, Imaging and Computer Graphics Theory and Applications, {VISIGRAPP}
-               2020, Volume 5: VISAPP, Valletta, Malta, February 27-29, 2020},
-  pages     = {652--659},
-  publisher = {{SCITEPRESS}},
-  year      = {2020},
-  url       = {https://doi.org/10.5220/0009102506520659},
-  doi       = {10.5220/0009102506520659},
-  timestamp = {Thu, 16 Apr 2020 15:05:50 +0200},
-  biburl    = {https://dblp.org/rec/conf/visapp/BarabanauABM20.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+<pre tabindex=0><code>@article{2021-unpaired-depth-sr,
+ author = {Safin, Aleksandr and Kan, Maxim and Drobyshev, Nikita and Voynov, Oleg and Artemov, Alexey and Filippov, Alexander and Zorin, Denis and Burnaev, Evgeny},
+ journal = {arXiv preprint arXiv:2105.12038},
+ title = {Towards Unpaired Depth Enhancement and Super-Resolution in the Wild},
+ year = {2021}
 }
+
+
 </code></pre>
-</li>
-<li>
-Slides: <a href="https://www.dropbox.com/s/yyt3y9uogxajlw0/Artemov_Visapp2020_Mono3d.pptx?dl=0">Slides</a>
 </li>
 </ul>
 </div>
