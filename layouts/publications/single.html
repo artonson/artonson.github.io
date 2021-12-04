@@ -53,13 +53,6 @@
             Supplementary PDF: <a href="{{ .Params.url_supp }}">{{ .Params.title }} Supplementary Materials</a>
         </li>
         {{ end }}
-        {{ if (isset .Params "url_bibtex") }}
-        <li>
-            Citing: 
-            {{ $file := readFile ( printf "%s%s" .RelPermalink "cite.bib" ) }}
-            {{ (print "```\n" $file "\n```") | markdownify }}
-        </li>
-        {{ end }}
 
         {{ if (isset .Params "url_code") }}
         <li>
@@ -90,6 +83,13 @@
         </li>
         {{ end }}
 
+        {{ if (isset .Params "url_bibtex") }}
+        <li>
+            Citing: 
+            {{ $file := readFile ( printf "%s%s" .RelPermalink "cite.bib" ) }}
+            {{ (print "```\n" $file "\n```") | markdownify }}
+        </li>
+        {{ end }}
     </ul>
 </div>
 
