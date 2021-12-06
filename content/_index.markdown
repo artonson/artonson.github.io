@@ -10,9 +10,11 @@ title: Home
 
 ## 2% Math, 98% Coding Stuff[<sup>1</sup>](https://en.wikipedia.org/wiki/Maceo_Parker#Autobiography)
 
-I am a postdoctoral researcher at ADASE laboratory, CDISE [Skoltech](http://www.skoltech.ru), advised by Associate Professor [Evgeny Burnaev](https://faculty.skoltech.ru/people/evgenyburnaev) and Adjunct Professor [Denis Zorin](https://mrl.cs.nyu.edu/~dzorin/). I obtained my Ph.D. in 2017 from Institute for Systems Analysis of Russian Academy of Sciences ([ISA RAS](http://www.isa.ru/index.php?lang=en)) under the supervision of Evgeny Burnaev.
+Hi! I am Alexey, a postdoctoral researcher at ADASE laboratory, CDISE [Skoltech](http://www.skoltech.ru), advised by Associate Professor [Evgeny Burnaev](https://faculty.skoltech.ru/people/evgenyburnaev) and Adjunct Professor [Denis Zorin](https://mrl.cs.nyu.edu/~dzorin/). I obtained my Ph.D. in 2017 from Institute for Systems Analysis of Russian Academy of Sciences ([ISA RAS](http://www.isa.ru/index.php?lang=en)) under the supervision of Evgeny Burnaev.
+Prior to joining Skoltech, I was a research engineer at [Yandex](https://yandex.com/dev/), the Moscow-based internet giant, where I developed software systems for web search, computer vision, and [autonomous driving](https://sdg.yandex.com).
 
-My research and development projects focus on 
+My research interests include 3D scene and shape reconstruction and digital geometry processing, where I work on improving the geometry processing pipeline with deep learning accelerated algorithms. 
+In 2021, I was honoured to receive the [Ilya Segalovich Award](https://yandex.com/company/blog/third-ilya-segalovich-award-honors-new-winners) for academic advisors.
 
 
  * More about [ADASE](http://adase.group) lab, [CDISE](https://crei.skoltech.ru/cdise), and [Skoltech](https://www.skoltech.ru/en)
