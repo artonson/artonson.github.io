@@ -33,8 +33,15 @@ pre = "<br />"
 url = "/"
 
 [[menu.main]]
-name = "Publications"
+name = "CV"
 weight = 2
+identifier = "cv"
+pre = "<br />"
+url = "/cv_alexey_artemov.pdf"
+
+[[menu.main]]
+name = "Publications"
+weight = 3
 identifier = "publications"
 pre = "<br />"
 url = "/publications"
@@ -44,28 +51,28 @@ name = "Teaching"
 identifier = "teaching" # this page will refer to a markdown file named "blog" in the content folder
 pre = "<br />"
 url = "/teaching"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Students"
 identifier = "students"
 pre = "<br />"
 url = "/students"
-weight = 4
+weight = 5
 
 [[menu.main]]
 name = "Code & Resources"
 identifier = "code_resources"
 pre = "<br />"
 url = "/code_resources"
-weight = 5
+weight = 6
 
 [[menu.main]]
 name = "Press"
 identifier = "press"
 pre = "<br />"
 url = "/press"
-weight = 6
+weight = 7
 
 
 [permalinks]
