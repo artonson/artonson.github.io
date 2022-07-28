@@ -1,7 +1,7 @@
 ---
 title: 'DEF: Deep Estimation of Sharp Geometric Features in 3D Shapes'
 date: '2022-07-01'
-draft: true
+draft: false
 publishDate: '2022-07-28T17:57:13.557457Z'
 authors:
 - Albert Matveev
