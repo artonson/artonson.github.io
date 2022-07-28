@@ -18,7 +18,7 @@ linkedinName = "your linkedin name"
 email = "your email"
 instagramName = "your ins name"
 hideHUGOSupport = false
-footer =  "&copy; [Alexey Artemov](https://artonson.github.io) 2021 | [Email](mailto:a.artemov@skoltech.ru) | [Github](https://github.com/artonson) | [Scholar](https://scholar.google.ru/citations?user=5lVsH-IAAAAJ&hl=en) | [YouTube](https://www.youtube.com/channel/UCO946RPg2Yp2PXFzon9_73g) | [LinkedIn](https://www.linkedin.com/artonson) | [Twitter](https://twitter.com/artonson)"
+footer =  "&copy; [Alexey Artemov](https://artonson.github.io) 2021&ndash;2022 | [Email](mailto:a.artemov@skoltech.ru) | [Github](https://github.com/artonson) | [Scholar](https://scholar.google.ru/citations?user=5lVsH-IAAAAJ&hl=en) | [YouTube](https://www.youtube.com/channel/UCO946RPg2Yp2PXFzon9_73g) | [LinkedIn](https://www.linkedin.com/in/artonson/) | [Twitter](https://twitter.com/artonson)"
 
 [markup]
   [markup.goldmark]
