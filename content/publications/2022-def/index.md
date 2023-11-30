@@ -41,5 +41,7 @@ url_pdf: https://dl.acm.org/doi/pdf/10.1145/3528223.3530140
 url_supp: https://www.dropbox.com/s/weqxi9nzknpxbra/2022-def-supp.pdf
 url_bibtex: /publications/2022-def/cite.bib
 url_code: https://github.com/artonson/def
+url_video: https://www.youtube.com/watch?v=roiqmlBXn_k
+youtube: roiqmlBXn_k
 ---
 
