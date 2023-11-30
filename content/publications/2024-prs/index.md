@@ -32,5 +32,6 @@ publication: 'Arxiv'
 url_pdf: https://artonson.github.io/publications/2024-prs/
 url_bibtex: /publications/2024-prs/cite.bib
 url_code: https://github.com/artonson/prs
+url_video: https://www.youtube.com/watch?v=tm2NqXfcP4I
 ---
 
