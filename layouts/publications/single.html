@@ -39,6 +39,12 @@
 {{ .Content }}
 </main>
 
+{{ if (isset .Params "youtube") }}
+<div>
+    <h2>Video</h2>
+    <iframe class="video" width="100%" height="400" src="http://www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+</div>
+{{ end }}
 
 <div>
     <h2>Resources</h2>
