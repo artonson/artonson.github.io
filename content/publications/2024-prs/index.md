@@ -4,12 +4,12 @@ date: '2023-01-01'
 draft: false
 publishDate: '2023-11-30T12:28:41.532436Z'
 authors:
+- Natalia Soboleva
 - Olga Gorbunova
 - Maria Ivanova
 - Evgeny Burnaev
 - Matthias Nießner
 - Denis Zorin
-- Natalia Soboleva
 - Alexey Artemov
 publication_types:
 - '2'
@@ -29,7 +29,7 @@ abstract: Surface reconstruction with preservation of geometric features is a ch
   improves over state-of-the-art by 26% normals F-score and 42% perceptual RMSEv. 
 featured: false
 publication: 'Arxiv'
-url_pdf: https://dl.acm.org/doi/pdf/10.1145/3528223.3530140
+url_pdf: https://artonson.github.io/publications/2024-prs/
 url_bibtex: /publications/2024-prs/cite.bib
 url_code: https://github.com/artonson/prs
 ---
