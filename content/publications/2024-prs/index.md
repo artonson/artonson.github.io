@@ -29,7 +29,7 @@ abstract: Surface reconstruction with preservation of geometric features is a ch
   improves over state-of-the-art by 26% normals F-score and 42% perceptual RMSEv. 
 featured: false
 publication: 'Arxiv'
-url_pdf: https://artonson.github.io/publications/2024-prs/
+url_pdf: https://arxiv.org/pdf/2311.18494.pdf
 url_bibtex: /publications/2024-prs/cite.bib
 url_code: https://github.com/artonson/prs
 url_video: https://www.youtube.com/watch?v=tm2NqXfcP4I
