@@ -1,6 +1,6 @@
 ---
 title: 'PRS: Sharp Feature Priors for Resolution-Free Surface Remeshing'
-date: '2023-01-01'
+date: '2024-01-01'
 draft: false
 publishDate: '2023-11-30T12:28:41.532436Z'
 authors:
