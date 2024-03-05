@@ -28,7 +28,7 @@ abstract: Surface reconstruction with preservation of geometric features is a ch
   On a challenging collection of high-resolution shape reconstructions in the ABC dataset, our algorithm 
   improves over state-of-the-art by 26% normals F-score and 42% perceptual RMSEv. 
 featured: false
-publication: 'Arxiv'
+publication: 'CVPR'
 url_pdf: https://arxiv.org/pdf/2311.18494.pdf
 url_bibtex: /publications/2024-prs/cite.bib
 url_code: https://github.com/artonson/prs
