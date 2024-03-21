@@ -32,10 +32,11 @@
   <tr>
     <td class="tg-0pky">
         <span class="publications-venue">
-            {{ .Params.publication | markdownify }} 
-            {{ with .Params.date }}
-                {{ . | dateFormat "2006" }}
-            {{ end }}
+{{ if in (lower .Params.publication) "arxiv" }}
+    arXived {{ with .Params.date }}{{ . | dateFormat "2006" }}{{ end }}
+{{ else }}
+    {{ .Params.publication | markdownify }} (first arXived {{ with .Params.date }}{{ . | dateFormat "2006" }}{{ end }})
+{{ end }}
         </span>
     </td>
   </tr>

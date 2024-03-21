@@ -1,6 +1,6 @@
 ---
 title: 'DEF: Deep Estimation of Sharp Geometric Features in 3D Shapes'
-date: '2022-07-01'
+date: '2020-11-30'
 draft: false
 publishDate: '2022-07-28T17:57:13.557457Z'
 authors:
@@ -30,7 +30,7 @@ abstract: We propose Deep Estimators of Features (DEFs), a learning-based framew
   from range scan data.We make code, pre-trained models, and our training and evaluation
   datasets available at https://github.com/artonson/def.
 featured: false
-publication: 'ACM Transaction on Graphics (SIGGRAPH)'
+publication: 'ACM Transaction on Graphics (SIGGRAPH) 2022'
 tags:
 - '"curve extraction"'
 - '"sharp geometric features"'

@@ -23,9 +23,6 @@
 
 <div class="publication-single-venue">
     {{ .Params.publication | markdownify }} 
-    {{ with .Params.date }}
-        {{ . | dateFormat "2006" }}
-    {{ end }}
 </div>
 
 <div>

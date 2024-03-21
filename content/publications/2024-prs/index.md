@@ -1,6 +1,6 @@
 ---
 title: 'PRS: Sharp Feature Priors for Resolution-Free Surface Remeshing'
-date: '2024-01-01'
+date: '2023-11-30'
 draft: false
 publishDate: '2023-11-30T12:28:41.532436Z'
 authors:
@@ -28,7 +28,7 @@ abstract: Surface reconstruction with preservation of geometric features is a ch
   On a challenging collection of high-resolution shape reconstructions in the ABC dataset, our algorithm 
   improves over state-of-the-art by 26% normals F-score and 42% perceptual RMSEv. 
 featured: false
-publication: 'CVPR'
+publication: 'Accepted to CVPR 2024'
 url_pdf: https://arxiv.org/pdf/2311.18494.pdf
 url_bibtex: /publications/2024-prs/cite.bib
 url_code: https://github.com/artonson/prs

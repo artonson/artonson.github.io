@@ -1,6 +1,6 @@
 ---
 title: 'Skoltech3D: Multi-sensor large-scale dataset for multi-view 3D reconstruction'
-date: '2023-01-01'
+date: '2022-03-11'
 draft: false
 publishDate: '2023-11-30T13:44:09.069290Z'
 authors:
@@ -32,7 +32,7 @@ abstract: 'We present a multi-sensor dataset for multi-view 3D surface reconstru
   conditions (b). We expect our dataset will be useful for evaluation and training of 3D reconstruction algorithms and for related tasks.'
 
 featured: false
-publication: 'CVPR'
+publication: 'CVPR 2023'
 url_pdf: http://openaccess.thecvf.com/content/CVPR2023/papers/Voynov_Multi-Sensor_Large-Scale_Dataset_for_Multi-View_3D_Reconstruction_CVPR_2023_paper.pdf
 url_supp: https://openaccess.thecvf.com/content/CVPR2023/supplemental/Voynov_Multi-Sensor_Large-Scale_Dataset_CVPR_2023_supplemental.pdf
 url_bibtex: /publications/2019-abc-dataset/cite.bib
