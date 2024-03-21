@@ -1,0 +1,103 @@
+{{ partial "header.html" . }}
+
+<h1>Art, Design, and Cultural Heritage</h1>
+
+{{ .Content }}
+
+<table class="tg">
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range (where $pages "Section" "!=" "").ByDate.Reverse }}
+  <tr class="publications-separator"><td/></tr>
+  <tr>
+    <td class="publications-teaser" rowspan="5" width=256> 
+        <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}image-thumb.jpg" width=512/></a>
+    </td>
+    <td class="tg-0pky">
+        <span class="publications-title">
+            <a href="{{ .RelPermalink }}">{{ .Params.title | markdownify }}</a>
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+        <span class="publications-authors">
+            {{ $authors := delimit .Params.authors ", " }}
+            {{ replace $authors "Alexey Artemov" "**Alexey Artemov**" | markdownify }}
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+        <span class="publications-abstract">
+            {{ .Params.abstract | markdownify }}
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-links">
+        {{ if (isset .Params "url_pdf") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_pdf }}">Paper</a>
+        </span>
+        {{ end }}
+        {{ if (isset .Params "url_supp") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_supp }}">Supplementary</a>
+        </span>
+        {{ end }}
+        {{ if (isset .Params "url_bibtex") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_bibtex }}">Bibtex</a>
+        </span>
+        {{ end }}
+
+        {{ if (isset .Params "url_code") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_code }}">Code</a>
+        </span>
+        {{ end }}
+        {{ if (isset .Params "url_data") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_data }}">Dataset</a>
+        </span>
+        {{ end }}
+
+
+        {{ if (isset .Params "url_video") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_video }}">Video</a>
+        </span>
+        {{ end }}
+        {{ if (isset .Params "url_slides") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_slides }}">Slides</a>
+        </span>
+        {{ end }}
+        {{ if (isset .Params "url_project") }}
+        <span class="publications-links">
+            <a href="{{ .Params.url_project }}">Project page</a>
+        </span>
+        {{ end }}
+    </td>
+  </tr>
+  {{ end }}
+  <tr class="publications-separator"><td/></tr>
+</table>
+
+<!--
+<ul>
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range (where $pages "Section" "!=" "") }}
+  <li>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <p>{{ .Params.publication }}</p>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+  </li>
+  {{ end }}
+</ul>
+-->
+
+{{ partial "footer.html" . }}
+

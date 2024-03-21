@@ -1,0 +1,99 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+    <h1>{{ .Params.title | markdownify }}</h1>
+</div>
+
+<div class="single-authors-wrap">
+    <table class="single-authors" id="single-authors">
+        <tr>
+        {{ range $index, $element := .Params.authors }}
+            <td>{{ $element }}</td>
+            {{ if eq (mod (add $index 1) 4) 0 }}
+            </tr>
+            <tr>
+            {{ end }}
+        {{ end }}
+        </tr>
+    </table>
+</div>
+
+<div class="publication-single-teaser">
+    <img src="{{ .RelPermalink }}image-big.jpg" width=768/>
+</div>
+
+<div class="publication-single-venue">
+    {{ .Params.publication | markdownify }} 
+</div>
+
+<div>
+    <h2>Abstract</h2>
+    <span class="publications-single-abstract">
+        {{ .Params.abstract | markdownify }}
+    </span>
+</div>
+
+<main>
+{{ .Content }}
+</main>
+
+{{ if (isset .Params "youtube") }}
+<div>
+    <h2>Video</h2>
+    <iframe class="video" width="100%" height="400" src="https://www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0"  allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+{{ end }}
+
+<div>
+    <h2>Resources</h2>
+    <ul>
+        {{ if (isset .Params "url_pdf") }}
+        <li>
+            Fulltext PDF: <a href="{{ .Params.url_pdf }}">{{ .Params.title }}</a>
+        </li>
+        {{ end }}
+        {{ if (isset .Params "url_supp") }}
+        <li>
+            Supplementary PDF: <a href="{{ .Params.url_supp }}">{{ .Params.title }} Supplementary Materials</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_code") }}
+        <li>
+            Source code: <a href="{{ .Params.url_code }}">{{ .Params.url_code }}</a>
+        </li>
+        {{ end }}
+        {{ if (isset .Params "url_data") }}
+        <li>
+            Dataset: <a href="{{ .Params.url_data }}">Dataset</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_video") }}
+        <li>
+            Video <a href="{{ .Params.url_video }}">Video</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_slides") }}
+        <li>
+            Slides: <a href="{{ .Params.url_slides }}">Slides</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_project") }}
+        <li>
+            Official project page: <a href="{{ .Params.url_project }}">{{ .Params.url_project }}</a>
+        </li>
+        {{ end }}
+
+        {{ if (isset .Params "url_bibtex") }}
+        <li>
+            Citing: 
+            {{ $file := readFile ( printf "%s%s" .RelPermalink "cite.bib" ) }}
+            {{ (print "```\n" $file "\n```") | markdownify }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+{{ partial "footer.html" . }}
