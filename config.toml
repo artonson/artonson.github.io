@@ -1,7 +1,7 @@
 baseurl = "https://artonson.github.io/"
 languageCode = "en-us"
 title = "Alexey Artemov"
-theme = "hugo-xmin-art"
+## theme = "hugo-xmin-art"
 paginate = 2
 Copyright = "© Yuanyuan GE 2020"
 canonifyurls = true
@@ -18,12 +18,15 @@ linkedinName = "your linkedin name"
 email = "your email"
 instagramName = "your ins name"
 hideHUGOSupport = false
-footer =  "&copy; [Alexey Artemov](https://artonson.github.io) 2021&ndash;2022 | [Email](mailto:a.artemov@skoltech.ru) | [Github](https://github.com/artonson) | [Scholar](https://scholar.google.ru/citations?user=5lVsH-IAAAAJ&hl=en) | [YouTube](https://www.youtube.com/channel/UCO946RPg2Yp2PXFzon9_73g) | [LinkedIn](https://www.linkedin.com/in/artonson/) | [Twitter](https://twitter.com/artonson)"
+footer =  "&copy; [Alexey Artemov](https://artonson.github.io) 2021&ndash;2024 | [Email](mailto:artonson@yandex.ru) | [Github](https://github.com/artonson) | [Scholar](https://scholar.google.ru/citations?user=5lVsH-IAAAAJ&hl=en) | [YouTube](https://www.youtube.com/channel/UCO946RPg2Yp2PXFzon9_73g) | [LinkedIn](https://www.linkedin.com/in/artonson/) | [Twitter](https://twitter.com/artonson) | [Telegram](https://t.me/research_meets_art)"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+[markup.goldmark.parser.attribute]
+    block = true
+    title = true
 
 [[menu.main]]  # here are the buttons on the menu
 name = "Home" # Button will display as "Home"
@@ -40,31 +43,38 @@ pre = "<br />"
 url = "/cv_alexey_artemov.pdf"
 
 [[menu.main]]
-name = "Publications"
+name = "Research"
 weight = 3
 identifier = "publications"
 pre = "<br />"
 url = "/publications"
 
 [[menu.main]]
-name = "Teaching"
-identifier = "teaching" # this page will refer to a markdown file named "blog" in the content folder
+name = "Education"
+identifier = "teaching"
 pre = "<br />"
 url = "/teaching"
 weight = 4
 
-[[menu.main]]
-name = "Students"
-identifier = "students"
-pre = "<br />"
-url = "/students"
-weight = 5
+#[[menu.main]]
+#name = "Students"
+#identifier = "students"
+#pre = "<br />"
+#url = "/students"
+#weight = 5
+
+#[[menu.main]]
+#name = "Code & Resources"
+#identifier = "code_resources"
+#pre = "<br />"
+#url = "/code_resources"
+#weight = 6
 
 [[menu.main]]
-name = "Code & Resources"
-identifier = "code_resources"
+name = "Art & Heritage"
+identifier = "art_heritage"
 pre = "<br />"
-url = "/code_resources"
+url = "/art"
 weight = 6
 
 [[menu.main]]

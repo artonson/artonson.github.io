@@ -30,7 +30,7 @@ abstract: We propose Deep Estimators of Features (DEFs), a learning-based framew
   from range scan data.We make code, pre-trained models, and our training and evaluation
   datasets available at https://github.com/artonson/def.
 featured: false
-publication: '*ACM Trans. Graph.*'
+publication: 'ACM Transaction on Graphics (SIGGRAPH)'
 tags:
 - '"curve extraction"'
 - '"sharp geometric features"'

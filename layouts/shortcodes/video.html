@@ -1,0 +1,33 @@
+
+<span class="video-player-container">
+  <span id="{{ .Get "id" }}" class="video-player"></span>
+</span>
+
+<script 
+  type="text/javascript" 
+  src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"
+>
+</script>
+
+<script>
+  var playerElement = document.getElementById("{{ .Get "id" }}");
+
+  var player = new Clappr.Player({
+    source: {{ .Get "src" }},
+    mute: {{ .Get "mute" }},
+    autoPlay: {{ .Get "autoplay" }},
+    loop: {{ .Get "loop" }},
+    height: {{ if .Get "height" }} {{ with .Get "height" }}{{ . }}{{ end }} {{ else }} 360 {{ end }},
+    width: {{ if .Get "width" }} {{ with .Get "width" }}{{ . }}{{ end }} {{ else }} 640 {{ end }},
+    disableKeyboardShortcuts: true,
+    hideVolumeBar: true,
+    playback: {
+        hlsjsConfig: {
+            maxBufferLength: 5
+        }
+    },
+  });
+
+  player.attachTo(playerElement);  
+</script>
+

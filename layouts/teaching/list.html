@@ -9,87 +9,100 @@
 <table class="tg">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
+  {{ range (where $pages "Section" "!=" "").ByDate.Reverse }}
+  <tr class="publications-separator"><td/></tr>
   <tr>
-    <td class="tg-c3ow" rowspan="4" width=256> 
-        <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}image-thumb.png" width=512/></a>
+    <td class="publications-teaser" rowspan="5" width=256> 
+        <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}image-thumb.jpg" width=512/></a>
     </td>
     <td class="tg-0pky">
-        <span class="teaching-title">
+        <span class="publications-title">
             <a href="{{ .RelPermalink }}">{{ .Params.title | markdownify }}</a>
         </span>
-        <span class="teaching-date">
-            ({{ .Params.course_date | markdownify }})
-        </span>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">
-        <span class="teaching-authors">
+        <span class="publications-authors">
             {{ $authors := delimit .Params.authors ", " }}
-            {{ replace $authors "Alexey Artemov," "**Alexey Artemov,**" | markdownify }}
+            {{ replace $authors "Alexey Artemov" "**Alexey Artemov**" | markdownify }}
         </span>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">
-        <span class="teaching-abstract">
+        <span class="publications-venue">
+            {{ .Params.venue | markdownify }} —
+        </span>
+        <span class="publications-venue">
+            {{ .Params.course_date | markdownify }}
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+        <span class="publications-abstract">
             {{ .Params.abstract | markdownify }}
         </span>
     </td>
   </tr>
   <tr>
-    <td class="tg-0lax">
+    <td class="tg-links">
         {{ if (isset .Params "url_notes") }}
-        <span class="teaching-links">
-            [<a href="{{ .Params.url_notes }}">Lecture notes</a>]
-        </span>
+            {{ range .Params.url_notes }}
+            <span class="publications-links">
+                <a href="{{ .url }}">Materials {{ .year }}</a>
+            </span>
+            {{ end }}
         {{ end }}
+
         {{ if (isset .Params "url_code") }}
-        <span class="teaching-links">
-            [<a href="{{ .Params.url_code }}">Code</a>]
+        <span class="publications-links">
+            {{ range .Params.url_code }}
+            <span class="publications-links">
+                <a href="{{ .url }}">Code {{ .year }}</a>
+            </span>
+            {{ end }}
         </span>
         {{ end }}
+
         {{ if (isset .Params "url_video") }}
-        <span class="teaching-links">
-            [<a href="{{ .Params.url_video }}">Videos</a>]
+        <span class="publications-links">
+            {{ range .Params.url_video }}
+            <span class="publications-links">
+                <a href="{{ .url }}">Videos {{ .year }}</a>
+            </span>
+            {{ end }}
         </span>
         {{ end }}
 
         {{ if (isset .Params "url_syllabus") }}
-        <span class="teaching-links">
-            [<a href="{{ .Params.url_syllabus }}">Syllabus</a>]
-        </span>
-        {{ end }}
-        {{ if (isset .Params "url_lms") }}
-        <span class="teaching-links">
-            [<a href="{{ .Params.url_lms }}">LMS</a>]
+        <span class="publications-links">
+            {{ range .Params.url_syllabus }}
+            <span class="publications-links">
+                <a href="{{ .url }}">Syllabus {{ .year }}</a>
+            </span>
+            {{ end }}
         </span>
         {{ end }}
 
         {{ if (isset .Params "url_course") }}
-        <span class="teaching-links">
-            [<a href="{{ .Params.url_course }}">Course page</a>]
+        <span class="publications-links">
+            {{ range .Params.url_course }}
+            <span class="publications-links">
+                <a href="{{ .url }}">Course {{ .year }}</a>
+            </span>
+            {{ end }}
         </span>
         {{ end }}
+
     </td>
   </tr>
+
   {{ end }}
+  <tr class="publications-separator"><td/></tr>
 </table>
 
-<!--
-<ul>
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
-  <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-    <p>{{ .Params.publication }}</p>
-    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-  </li>
-  {{ end }}
-</ul>
--->
 
 {{ partial "footer.html" . }}
 

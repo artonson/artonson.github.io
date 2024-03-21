@@ -9,7 +9,8 @@
 <table class="tg">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
+  {{ range (where $pages "Section" "!=" "").ByDate.Reverse }}
+  <tr class="publications-separator"><td/></tr>
   <tr>
     <td class="publications-teaser" rowspan="5" width=256> 
         <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}image-thumb.jpg" width=512/></a>
@@ -17,12 +18,6 @@
     <td class="tg-0pky">
         <span class="publications-title">
             <a href="{{ .RelPermalink }}">{{ .Params.title | markdownify }}</a>
-        </span>
-        <span class="publications-venue">
-            {{ .Params.publication | markdownify }} 
-            {{ with .Params.date }}
-                {{ . | dateFormat "2006" }}
-            {{ end }}
         </span>
     </td>
   </tr>
@@ -36,60 +31,70 @@
   </tr>
   <tr>
     <td class="tg-0pky">
+        <span class="publications-venue">
+            {{ .Params.publication | markdownify }} 
+            {{ with .Params.date }}
+                {{ . | dateFormat "2006" }}
+            {{ end }}
+        </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
         <span class="publications-abstract">
             {{ .Params.abstract | markdownify }}
         </span>
     </td>
   </tr>
   <tr>
-    <td class="tg-0lax">
+    <td class="tg-links">
         {{ if (isset .Params "url_pdf") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_pdf }}">Paper</a>]
+            <a href="{{ .Params.url_pdf }}">Paper</a>
         </span>
         {{ end }}
         {{ if (isset .Params "url_supp") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_supp }}">Supplementary</a>]
+            <a href="{{ .Params.url_supp }}">Supplementary</a>
         </span>
         {{ end }}
         {{ if (isset .Params "url_bibtex") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_bibtex }}">Bibtex</a>]
+            <a href="{{ .Params.url_bibtex }}">Bibtex</a>
         </span>
         {{ end }}
 
         {{ if (isset .Params "url_code") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_code }}">Code</a>]
+            <a href="{{ .Params.url_code }}">Code</a>
         </span>
         {{ end }}
         {{ if (isset .Params "url_data") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_data }}">Dataset</a>]
+            <a href="{{ .Params.url_data }}">Dataset</a>
         </span>
         {{ end }}
 
 
         {{ if (isset .Params "url_video") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_video }}">Video</a>]
+            <a href="{{ .Params.url_video }}">Video</a>
         </span>
         {{ end }}
         {{ if (isset .Params "url_slides") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_slides }}">Slides</a>]
+            <a href="{{ .Params.url_slides }}">Slides</a>
         </span>
         {{ end }}
         {{ if (isset .Params "url_project") }}
         <span class="publications-links">
-            [<a href="{{ .Params.url_project }}">Project page</a>]
+            <a href="{{ .Params.url_project }}">Project page</a>
         </span>
         {{ end }}
     </td>
   </tr>
-  <tr class="publications-separator"><td/></tr>
   {{ end }}
+  <tr class="publications-separator"><td/></tr>
 </table>
 
 <!--

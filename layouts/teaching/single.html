@@ -8,7 +8,7 @@
         <tr>
         {{ range $index, $element := .Params.authors }}
             <td>{{ $element }}</td>
-            {{ if eq (mod (add $index 1) 5) 0 }}
+            {{ if eq (mod (add $index 1) 4) 0 }}
             </tr>
             <tr>
             {{ end }}
@@ -19,14 +19,14 @@
 
 
 <div class="publication-single-teaser">
-    <img src="{{ .RelPermalink }}image-big.png" width=768/>
+    <img src="{{ .RelPermalink }}image-big.jpg" width=768/>
 </div>
 
 
 <div>
     <h2>Information</h2>
     <div class="teaching-single-venue">
-        <span><em>Version (taught during): </em>{{ .Params.course_version }} ({{ .Params.course_date }})</span>
+        <span><em>Versions (taught during): </em>{{ .Params.course_version }} ({{ .Params.course_date }})</span>
     </div>
 
     <div class="teaching-single-venue">
@@ -34,7 +34,7 @@
     </div>
 
     <div class="teaching-single-venue">
-        <span><em>Program: </em>{{ .Params.level }} in {{ .Params.program }}</span>
+        <span><em>Taught for: </em>{{ .Params.level }} in {{ .Params.program }}</span>
     </div>
 </div>
 
@@ -56,44 +56,43 @@
     <h2>Course Links</h2>
     <ul>
         {{ if (isset .Params "url_notes") }}
-        <li>
-            Course materials (lecture notes and slides): <a href="{{ .Params.url_notes }}">{{ .Params.url_notes }}</a>
-        </li>
+            {{ range $.Params.url_notes }}
+            <li>
+                Slides and handouts {{ .year }}: <a href="{{ .url }}">{{ .url }}</a>
+            </li>
+            {{ end }}
         {{ end }}
 
         {{ if (isset .Params "url_code") }}
-        <li>
-            Source code: <a href="{{ .Params.url_code }}">{{ .Params.url_code }}</a>
-        </li>
-        {{ end }}
-        {{ if (isset .Params "url_data") }}
-        <li>
-            Dataset: <a href="{{ .Params.url_data }}">Dataset</a>
-        </li>
+            {{ range $.Params.url_code }}
+            <li>
+                Practicals and source code {{ .year }}: <a href="{{ .url }}">{{ .url }}</a>
+            </li>
+            {{ end }}
         {{ end }}
 
         {{ if (isset .Params "url_video") }}
-        <li>
-            Course video recordings: <a href="{{ .Params.url_video }}">{{ .Params.url_video }}</a>
-        </li>
+            {{ range $.Params.url_video }}
+            <li>
+                Video recordings {{ .year }}: <a href="{{ .url }}">{{ .url }}</a>
+            </li>
+            {{ end }}
         {{ end }}
 
         {{ if (isset .Params "url_syllabus") }}
-        <li>
-            Official syllabus: <a href="{{ .Params.url_syllabus }}">{{ .Params.url_syllabus }}</a>
-        </li>
-        {{ end }}
-
-        {{ if (isset .Params "url_lms") }}
-        <li>
-            Official course LMS: <a href="{{ .Params.url_lms }}">{{ .Params.url_lms }}</a>
-        </li>
+            {{ range $.Params.url_syllabus }}
+            <li>
+                Official syllabus {{ .year }}: <a href="{{ .url }}">{{ .url }}</a>
+            </li>
+            {{ end }}
         {{ end }}
 
         {{ if (isset .Params "url_course") }}
-        <li>
-            Course page: <a href="{{ .Params.url_course }}">{{ .Params.url_course }}</a>
-        </li>
+            {{ range $.Params.url_course }}
+            <li>
+                Official course page {{ .year }}: <a href="{{ .url }}">{{ .url }}</a>
+            </li>
+            {{ end }}
         {{ end }}
 
     </ul>
