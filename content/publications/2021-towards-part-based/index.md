@@ -23,5 +23,6 @@ url_bibtex: /publications/2021-towards-part-based/cite.bib
 url_video: https://www.youtube.com/watch?v=iuixmPNs4v4
 url_slides: https://www.dropbox.com/s/f4ne7k6uim7vqck/2021-towards-part-based.pptx.zip?dl=0
 url_project: https://www.3dunderstanding.org/papers/2021/bokhovkin2021towards/
+youtube: iuixmPNs4v4
 ---
 

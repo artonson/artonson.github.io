@@ -1,5 +1,5 @@
 ---
-title: 'DeepMIF: Deep Monotonic Implicit Fields<br/> for Large-Scale LiDAR 3D Mapping'
+title: 'DeepMIF: Deep Monotonic Implicit Fields for Large-Scale LiDAR 3D Mapping'
 date: '2024-01-01'
 draft: false
 publishDate: '2024-03-19T12:43:09.121255Z'
@@ -19,6 +19,8 @@ abstract: 'Recently, significant progress has been achieved in sensing real larg
 featured: false
 publication: 'ArXiv'
 url_code: https://github.com/artonson/deepmif
+url_video: https://youtu.be/WC-pcaf94N4
+youtube: WC-pcaf94N4
 ---
 
 ## Sample Reconstruction Results

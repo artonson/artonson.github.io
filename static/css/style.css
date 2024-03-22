@@ -139,3 +139,38 @@ a:hover { color: #f41224!important; }
 a:visited { color: #b40eb4; }
 a:link { color: #0055cc; }
 
+div.gallery-morda-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+div.gallery-morda-column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 4px;
+}
+
+cdiv.gallery-morda-olumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  div.gallery-morda-column {
+    flex: 23%;
+    max-width: 23%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  div.gallery-morda-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+

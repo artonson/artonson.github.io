@@ -6,16 +6,36 @@
 
 {{ .Content }}
 
-<ul>
+<div class="gallery-morda-row">
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+    <div class="gallery-morda-column">
+    {{ range $index, $element := (where $pages "Section" "!=" "") }}
+        <a href="{{ .RelPermalink }}">
+            <img src="{{ .RelPermalink }}image-thumb.jpg" /> 
+        </a>
+        {{ if eq (mod (add $index 1) 6) 0 }}
+    </div>
+    <div class="gallery-morda-column">
+        {{ end }}
+    {{ end }}
+    </div>
+</div>
+
+
+<!--<ul>
+
+
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
   {{ range (where $pages "Section" "!=" "") }}
   <li>
     <img src="{{ .RelPermalink }}image-thumb.jpg" width="128" /> 
-<!--    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a> -->
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a> 
   </li>
   {{ end }}
 </ul>
+-->
 
 {{ partial "footer.html" . }}

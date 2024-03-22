@@ -32,16 +32,16 @@
     </span>
 </div>
 
-<main>
-{{ .Content }}
-</main>
-
 {{ if (isset .Params "youtube") }}
 <div>
     <h2>Video</h2>
     <iframe class="video" width="100%" height="400" src="https://www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0"  allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 </div>
 {{ end }}
+
+<main>
+{{ .Content }}
+</main>
 
 <div>
     <h2>Resources</h2>

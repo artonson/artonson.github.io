@@ -27,15 +27,15 @@ Natalia and Alexey helped them come up with an shape for this breakthrough idea.
 
 
 Karel and Ainoa created a mood board to start the process.
-<img src="process_mood_board.JPG" alt="Mood board to start the process" style="width:800px;"/>
+<img src="process_mood_board.JPG" alt="Mood board to start the process" style="width:100%;"/>
 
 Two titanium screws from the Apollo 15 mission (1971) served as the inspiration.
 <img src="process_motivation_1.jpg" alt="Two titanium screws from the Apollo 15 mission (1971) served as the inspiration" style="width:800px;"/>
 
 The screws will accomodate one cufflink each.
 <p float="left">
-<img src="process_motivation_2.jpg" alt="Two titanium screws from the Apollo 15 mission (1971) served as the inspiration" style="width:390px;"/>
-<img src="process_motivation_3.jpg" alt="Two titanium screws from the Apollo 15 mission (1971) served as the inspiration" style="width:390px;"/>
+<img src="process_motivation_2.jpg" alt="Two titanium screws from the Apollo 15 mission (1971) served as the inspiration" style="width:49%;"/>
+<img src="process_motivation_3.jpg" alt="Two titanium screws from the Apollo 15 mission (1971) served as the inspiration" style="width:49%;"/>
 </p>
 
 
