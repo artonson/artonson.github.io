@@ -12,6 +12,7 @@ Hi! I am Alexey, a postdoc researcher at [TUM Visual Computing Lab](https://nies
 Prior to joining Skoltech, I was a research engineer at [Yandex](https://yandex.com/dev/), the Moscow-based internet giant, where I developed software systems for web search, computer vision, and [autonomous driving](https://sdg.yandex.com).
 See more in [my CV](/cv_alexey_artemov.pdf).
 
+
 My research interests include 3D scene and shape reconstruction and digital geometry processing, where I work on improving the geometry processing pipeline with deep learning accelerated algorithms. 
 In 2021, I was honoured to receive the [Ilya Segalovich Award](https://yandex.com/company/blog/third-ilya-segalovich-award-honors-new-winners) for academic advisors.
 
