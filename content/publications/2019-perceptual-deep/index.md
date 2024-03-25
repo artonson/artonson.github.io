@@ -20,5 +20,6 @@ url_pdf: https://openaccess.thecvf.com/content_ICCV_2019/papers/Voynov_Perceptua
 url_supp: https://openaccess.thecvf.com/content_ICCV_2019/supplemental/Voynov_Perceptual_Deep_Depth_ICCV_2019_supplemental.pdf
 url_bibtex: /publications/2019-perceptual-deep/cite.bib
 url_code: https://github.com/voyleg/perceptual-depth-sr
+url_slides: https://www.dropbox.com/scl/fi/ijam34a36wbvi8yep9fp7/2019-perceptual-deep.zip?rlkey=7i0iojo62o17pj0niaemfqcja&dl=0
 ---
 

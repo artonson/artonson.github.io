@@ -42,6 +42,7 @@ url_supp: https://www.dropbox.com/s/weqxi9nzknpxbra/2022-def-supp.pdf
 url_bibtex: /publications/2022-def/cite.bib
 url_code: https://github.com/artonson/def
 url_video: https://www.youtube.com/watch?v=roiqmlBXn_k
+url_slides: https://www.dropbox.com/scl/fi/74ayo4dduxhzfsar1z87m/2022-def.key.zip?rlkey=bi54mtkkzilgbr6gpj2z0osuf&dl=0
 youtube: roiqmlBXn_k
 ---
 

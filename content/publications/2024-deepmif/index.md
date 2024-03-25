@@ -34,9 +34,9 @@ and [VDBFusion](https://github.com/PRBonn/vdbfusion).
 ### Mai City
 Mai City is a simulated environment commonly used for benchmarking scene reconstruction algorithms.
 
-| | |
+| Shaded render | Precision map |
 |-|-|
-| {{< video id="mai_city_shaded" src="mai_city_shaded.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} | {{< video id="newer_college_color" src="newer_college_color.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} |
+| {{< video id="mai_city_shaded" src="videos/mai_city_shaded.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} | {{< video id="mai_city_colored" src="videos/mai_city_colored.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} |
 {.video-gallery}
 
 
@@ -44,6 +44,10 @@ Mai City is a simulated environment commonly used for benchmarking scene reconst
 ### Newer College
 Newer College is a building belonging to Oxford University. It was scanned using a hand-held LiDAR (common input data for reconstruction) and a terrestrial industrial LiDAR (common reference data for evaluation).
 
+| Shaded render | Precision map |
+|-|-|
+| {{< video id="newer_college_shaded" src="videos/newer_college_shaded.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} | {{< video id="newer_college_colored" src="videos/newer_college_colored.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} |
+{.video-gallery}
 
 
 ### KITTI
@@ -51,4 +55,8 @@ KITTI is the best known, and the most commonly used benchmark for autonomous dri
 The data used was a Velodyne LiDAR scanned mounted on a Volkswagen. 
 
 
+| Shaded render | 
+|-|
+| {{< video id="kitti_shaded" src="videos/kitti_shaded.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} |
+{.video-gallery}
 
