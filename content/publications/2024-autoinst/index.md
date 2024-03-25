@@ -19,3 +19,16 @@ url_video: https://www.youtube.com/watch?v=ioKJWY8L6xk
 youtube: ioKJWY8L6xk
 ---
 
+
+## Visual Results on KITTI
+
+| **3DUIS** | **HDBSCAN** |
+|-|-|
+| {{< video id="3duis" src="videos/3duis_800x450_20s_compressed.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} | {{< video id="hdbscan" src="videos/hdbscan_800x450_20s_compressed.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} |
+{.video-gallery}
+
+| **OURS (NCut)** | **Ours (NCut + Refined)** |
+|-|-|
+| {{< video id="ours" src="videos/ours_800x450_20s_compressed.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} | {{< video id="ours_refined" src="videos/ours_refined_800x450_20s_compressed.mp4" width="400" height="225" mute="true" autoplay="true" loop="true" >}} |
+{.video-gallery}
+

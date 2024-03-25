@@ -18,5 +18,6 @@ publication: 'VISAPP 2021'
 url_pdf: https://arxiv.org/pdf/2006.10704
 url_bibtex: /publications/2021-lvt/cite.bib
 url_code: https://github.com/rakhimovv/lvt
+url_slides: https://www.dropbox.com/scl/fi/eyo6uqep2et3p0not521c/2021-lvt.pptx.zip?rlkey=4gty4ci9x8nnz2e6plx390xvp&dl=0
 ---
 

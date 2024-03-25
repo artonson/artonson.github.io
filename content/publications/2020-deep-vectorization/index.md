@@ -23,5 +23,6 @@ url_code: https://github.com/Vahe1994/Deep-Vectorization-of-Technical-Drawings
 url_bibtex: /publications/2020-deep-vectorization/cite.bib
 url_video: https://www.youtube.com/watch?v=lnQNzHJOLvE
 url_slides: https://www.dropbox.com/s/ux1lzxw6qbcqi7d/2020-deep-vectorization.pptx.zip?dl=0
+youtube: lnQNzHJOLvE
 ---
 

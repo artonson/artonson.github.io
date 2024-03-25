@@ -20,5 +20,8 @@ publication: 'ECCV 2020'
 url_pdf: https://arxiv.org/pdf/2007.11965.pdf
 url_bibtex: /publications/2024-ssr-2d/cite.bib
 url_code: https://github.com/alexeybokhovkin/CAD-Deform
+url_video: https://www.youtube.com/watch?v=tzFMIzkTyVo
+url_slides: https://www.dropbox.com/scl/fi/ztjy8pfdit7wbsw5inhzn/2020-cad-deform.pptx.zip?rlkey=lhbnko1cpqncbw5ebp37960t9&dl=0
+youtube: tzFMIzkTyVo
 ---
 
