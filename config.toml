@@ -77,12 +77,12 @@ pre = "<br />"
 url = "/art"
 weight = 6
 
-[[menu.main]]
-name = "Press"
-identifier = "press"
-pre = "<br />"
-url = "/press"
-weight = 7
+#[[menu.main]]
+#name = "Press"
+#identifier = "press"
+#pre = "<br />"
+#url = "/press"
+#weight = 7
 
 
 [permalinks]
