@@ -18,7 +18,7 @@ publication_types:
 abstract: 'Recently, significant progress has been achieved in sensing real large-scale outdoor 3D environments, particularly by using modern acquisition equipment such as LiDAR sensors. Unfortunately, they are fundamentally limited in their ability to produce dense, complete 3D scenes. To address this issue, recent learning-based methods integrate neural implicit representations and optimizable feature grids to approximate surfaces of 3D scenes. However, naively fitting samples along raw LiDAR rays leads to noisy 3D mapping results due to the nature of sparse, conflicting LiDAR measurements. Instead, in this work we depart from fitting LiDAR data exactly, instead letting the network optimize a non-metric monotonic implicit field defined in 3D space. To fit our field, we design a learning system integrating a monotonicity loss that enables optimizing neural monotonic fields and leverages recent progress in large- scale 3D mapping. Our algorithm achieves high-quality dense 3D mapping performance as captured by multiple quantitative and perceptual measures and visual results obtained for Mai City, Newer College, and KITTI benchmarks. The code of our approach will be made publicly available.'
 featured: false
 publication: 'ArXiv'
-url_paper: https://arxiv.org/pdf/2403.17550.pdf
+url_pdf: https://arxiv.org/pdf/2403.17550.pdf
 url_code: https://github.com/artonson/deepmif
 url_video: https://youtu.be/WC-pcaf94N4
 youtube: WC-pcaf94N4
