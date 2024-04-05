@@ -13,7 +13,7 @@ authors:
 - Pavel Karpyshev
 - Timofey Glukhikh
 featured: false
-abstract: 'The preservation of historical and cultural heritage is an important task for modern society as multiple modern historical and cultural world heritage sites are endangered and require significant efforts for their conservation. In Russia, roughly 30 thousand cultural heritage sites are present in Central Federal district alone. Digital models help preserve what time and circumstances may otherwise destroy. This work is a pilot collaboration project between Skoltech and State Historical Museum aimed at designing a scanning and reconstruciton methodology for 3D cultural and historical artefacts and creating 3D replicas of museum exhibits and buildings.'
+abstract: 'The preservation of historical and cultural heritage is an important task for modern society as multiple modern historical and cultural world heritage sites are endangered and require significant efforts for their conservation. In Russia, roughly 30 thousand cultural heritage sites are present in Central Federal district alone. Digital models help preserve what time and circumstances may otherwise destroy. This work is a pilot collaboration project between Skoltech and State Historical Museum aimed at designing a 3D scanning and reconstruction pipelines for cultural and historical artefacts and creating 3D replicas of museum exhibits and buildings.'
 url_video: https://www.youtube.com/watch?v=yYbY_0LI2CE&t=2991s
 
 ---
